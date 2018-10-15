@@ -24,6 +24,10 @@
 		22B7F9E01D478BF9008C427D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B7F9DF1D478BF9008C427D /* Video.swift */; };
 		22BD93601D3394A200CD57A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD935F1D3394A200CD57A5 /* User.swift */; };
 		22FD9CF41EDEDF200025B02F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD9CF31EDEDF200025B02F /* PlayerView.swift */; };
+		4E0E47072174284D0063FEF2 /* HTTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E47032174284C0063FEF2 /* HTTPModel.swift */; };
+		4E0E47082174284D0063FEF2 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E47042174284C0063FEF2 /* NetworkHelper.swift */; };
+		4E0E47092174284D0063FEF2 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E47052174284C0063FEF2 /* NetworkProtocol.swift */; };
+		4E0E470A2174284D0063FEF2 /* NetworkCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E47062174284D0063FEF2 /* NetworkCollector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		22B7F9DF1D478BF9008C427D /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
 		22BD935F1D3394A200CD57A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		22FD9CF31EDEDF200025B02F /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerView.swift; path = "Supporting views/PlayerView.swift"; sourceTree = "<group>"; };
+		4E0E47032174284C0063FEF2 /* HTTPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPModel.swift; sourceTree = "<group>"; };
+		4E0E47042174284C0063FEF2 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		4E0E47052174284C0063FEF2 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		4E0E47062174284D0063FEF2 /* NetworkCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCollector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,10 @@
 				22AA44661D1302FC00CA6185 /* AppDelegate.swift */,
 				22AA446A1D1302FC00CA6185 /* Main.storyboard */,
 				22AA446D1D1302FC00CA6185 /* Assets.xcassets */,
+				4E0E47062174284D0063FEF2 /* NetworkCollector.swift */,
+				4E0E47052174284C0063FEF2 /* NetworkProtocol.swift */,
+				4E0E47032174284C0063FEF2 /* HTTPModel.swift */,
+				4E0E47042174284C0063FEF2 /* NetworkHelper.swift */,
 				2229DC541D1EEA2E0058E804 /* ViewControllers */,
 				2266A71C1D2E6C1B00B4B9B3 /* supporting views */,
 				2229DC551D1EEA4F0058E804 /* Extensions */,
@@ -167,12 +179,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Haik Aslanyan";
 				TargetAttributes = {
 					22AA44621D1302FB00CA6185 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P6GDVV24N5;
+						DevelopmentTeam = 56YMF9G6Z8;
 						DevelopmentTeamName = "Haik Aslanyan (Personal Team)";
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
@@ -215,13 +227,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0E47092174284D0063FEF2 /* NetworkProtocol.swift in Sources */,
 				22BD93601D3394A200CD57A5 /* User.swift in Sources */,
 				221E55061ECF4F1200EC7650 /* SubscriptionsVC.swift in Sources */,
 				226B84F31D329FBA006D6A0D /* HomeVC.swift in Sources */,
+				4E0E47072174284D0063FEF2 /* HTTPModel.swift in Sources */,
 				22FD9CF41EDEDF200025B02F /* PlayerView.swift in Sources */,
+				4E0E470A2174284D0063FEF2 /* NetworkCollector.swift in Sources */,
 				22AA44671D1302FC00CA6185 /* AppDelegate.swift in Sources */,
 				2286206F1EC83F8700E82CFF /* SearchView.swift in Sources */,
 				220E5E2C1D2E7D33001E60A3 /* extensions.swift in Sources */,
+				4E0E47082174284D0063FEF2 /* NetworkHelper.swift in Sources */,
 				22B7F9E01D478BF9008C427D /* Video.swift in Sources */,
 				228620711EC859DD00E82CFF /* SettingsView.swift in Sources */,
 				22A486851D5391EC00B0BAEC /* NavVC.swift in Sources */,
@@ -259,6 +275,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -266,6 +283,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -314,6 +332,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -321,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -355,14 +375,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: haik@mexonis.com (GZ4E237K2F)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P6GDVV24N5;
+				DEVELOPMENT_TEAM = 56YMF9G6Z8;
 				INFOPLIST_FILE = YouTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haik.YouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -373,14 +393,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: haik@mexonis.com (GZ4E237K2F)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P6GDVV24N5;
+				DEVELOPMENT_TEAM = 56YMF9G6Z8;
 				INFOPLIST_FILE = YouTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haik.YouTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
